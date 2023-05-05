@@ -18,13 +18,9 @@ namespace Homework.src
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                // Создаем объект DataAdapter
                 SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
-    // Создаем объект Dataset
     DataSet ds = new DataSet();
-    // Заполняем Dataset
     adapter.Fill(ds);
-                // Отображаем данные
                 dataGridView1.DataSource = ds.Tables[0];
             }
         }
