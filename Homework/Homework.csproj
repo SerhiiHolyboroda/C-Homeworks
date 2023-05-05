@@ -36,7 +36,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\CheckResults.cs" />
+    <Compile Include="src\CreateOrderItem.cs" />
+    <Compile Include="src\DeleteOrderItem.cs" />
     <Compile Include="src\Program.cs" />
+    <Compile Include="src\QueryData.cs" />
+    <Compile Include="src\UpdateOrderItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
